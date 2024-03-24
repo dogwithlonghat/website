@@ -23,16 +23,15 @@ footer {
     padding: 1rem;
 }
 
-/* Style the container */
 .photobanner {
-    width: 1000px; /* Adjust as needed */
+    display: flex; /* Use flexbox to arrange images side by side */
     overflow: hidden; /* Hide overflowing images */
 }
 
-/* Style the images within the container */
 .photobanner img {
-    float: left; /* Arrange images horizontally */
+    flex: 0 0 auto; /* Allow images to grow and shrink as needed */
     margin-right: 20px; /* Add spacing between images */
+    animation: scroll 20s linear infinite; /* Adjust duration as needed */
 }
 
 @keyframes scroll {
@@ -44,6 +43,21 @@ footer {
     }
 }
 
-.photobanner img {
-    animation: scroll 20s linear infinite; /* Adjust duration as needed */
-}
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
