@@ -1,19 +1,44 @@
-/* styles.css */
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+main {
+    padding: 2rem;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Additional styles for the banner */
 .banner {
-    display: flex; /* Display images in a row */
-    overflow: hidden; /* Hide overflow to create the scrolling effect */
-    animation: scrollBanner 10s linear infinite; /* Animation for scrolling */
+    display: flex;
+    overflow: hidden;
+    animation: scrollBanner 10s linear infinite;
 }
 
 .image {
-    flex: 0 0 100%; /* Each image takes up the full width of the container */
+    flex: 0 0 100%;
 }
 
 @keyframes scrollBanner {
     0% {
-        transform: translateX(0); /* Start position */
+        transform: translateX(0);
     }
     100% {
-        transform: translateX(-100%); /* End position (scrolls left) */
+        transform: translateX(-100%);
     }
 }
