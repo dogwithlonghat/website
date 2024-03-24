@@ -35,11 +35,11 @@ footer {
 }
 
 @keyframes scroll {
-    from {
-        transform: translateX(-50vw);
-      }
-    to {
-        transform: translateX(50vw);
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%); /* Move images left by their width */
     }
 }
 
