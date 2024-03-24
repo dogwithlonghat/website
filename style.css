@@ -31,7 +31,7 @@ footer {
 .photobanner img {
     flex: 0 0 auto; /* Allow images to grow and shrink as needed */
     margin-right: 20px; /* Add spacing between images */
-    animation: scroll 5s linear 1s infinite alternate;
+    animation: scroll 5s linear infinite alternate;
 }
 
 @keyframes scroll {
