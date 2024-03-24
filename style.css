@@ -1,0 +1,19 @@
+/* styles.css */
+.banner {
+    display: flex; /* Display images in a row */
+    overflow: hidden; /* Hide overflow to create the scrolling effect */
+    animation: scrollBanner 10s linear infinite; /* Animation for scrolling */
+}
+
+.image {
+    flex: 0 0 100%; /* Each image takes up the full width of the container */
+}
+
+@keyframes scrollBanner {
+    0% {
+        transform: translateX(0); /* Start position */
+    }
+    100% {
+        transform: translateX(-100%); /* End position (scrolls left) */
+    }
+}
