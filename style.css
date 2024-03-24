@@ -26,6 +26,8 @@ footer {
 .banner {
     display: flex;
     overflow: hidden;
+    height: 200px;
+    max-width: 800px;
     /* Adjust the animation to move the images horizontally */
     animation: scrollBanner 20s linear infinite; /* Doubled the duration for smoother scrolling */
 }
@@ -36,10 +38,7 @@ footer {
 }
 
 @keyframes scrollBanner {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-100%);
+    100% { 
+        transform: translateX(-66.6666%);  
     }
 }
